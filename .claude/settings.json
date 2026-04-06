@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx --yes create-vite@latest temp_app -- --template react-typescript)",
+      "Bash(cp -r temp_app/* temp_app/.gitignore .)",
+      "Bash(rm -rf temp_app)",
+      "Bash(npm install:*)",
+      "Bash(rm -f counter.ts main.ts style.css)",
+      "Bash(mkdir -p components context pages types)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Read(//c/Users/Dave/Documents/GitHub/vsic_claims/**)"
+    ]
+  }
+}
