@@ -76,6 +76,7 @@ export default function FlowchartPage() {
                 <Arrow />
 
                 <FlowNode label="Validation Outcomes" type="decision" />
+                <Arrow />
 
                 <div className="flex items-start gap-16 mt-4">
                   {/* Incomplete path */}
@@ -93,6 +94,7 @@ export default function FlowchartPage() {
                     <Arrow />
 
                     <FlowNode label="Within 90 Days?" type="decision" />
+                    <Arrow />
 
                     <div className="flex items-start gap-16 mt-4">
                       {/* Beyond 90 days */}
@@ -101,6 +103,7 @@ export default function FlowchartPage() {
                         <FlowNode label="Cashier to Further Validate" color="bg-pink-100 border-pink-300 text-pink-900" />
                         <Arrow />
                         <FlowNode label="Premium Requirements Met?" type="decision" />
+                        <Arrow />
                         <div className="flex items-start gap-12 mt-4">
                           <div className="flex flex-col items-center">
                             <span className="text-xs text-red-500 font-semibold mb-2">NO</span>
@@ -129,10 +132,12 @@ export default function FlowchartPage() {
                             <FlowNode label="PPW, CBW & Loss Notification Checking" color="bg-indigo-100 border-indigo-300 text-indigo-900" />
                             <Arrow />
                             <FlowNode label="Outstanding Issues?" type="decision" />
+                            <Arrow />
                             <div className="flex items-start gap-12 mt-4">
                               <div className="flex flex-col items-center">
                                 <span className="text-xs text-orange-500 font-semibold mb-2">YES</span>
                                 <FlowNode label="Claims Committee Review" color="bg-fuchsia-100 border-fuchsia-300 text-fuchsia-900" />
+                                <Arrow />
                                 <div className="flex items-start gap-12 mt-3">
                                   <div className="flex flex-col items-center">
                                     <span className="text-xs text-green-600 font-semibold mb-2">APPROVED</span>
