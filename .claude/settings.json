@@ -12,7 +12,10 @@
       "Bash(npm run:*)",
       "Bash(npm uninstall:*)",
       "Bash(curl -s http://localhost:5173)",
-      "Read(//c/Users/Dave/Documents/GitHub/vsic_claims/**)"
+      "Read(//c/Users/Dave/Documents/GitHub/vsic_claims/**)",
+      "Bash(gh run:*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list --limit 1)",
+      "Bash(npm ci:*)"
     ]
   }
 }
