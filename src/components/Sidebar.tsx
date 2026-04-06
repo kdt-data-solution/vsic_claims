@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Columns3, PlusCircle, GitBranch } from 'lucide-react';
+import { LayoutDashboard, Columns3, PlusCircle, GitBranch, Zap } from 'lucide-react';
 
 interface SidebarProps {
   onNewClaim: () => void;
@@ -10,6 +10,7 @@ const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/board', icon: Columns3, label: 'Kanban Board' },
   { to: '/flowchart', icon: GitBranch, label: 'Process Flow' },
+  { to: '/automation', icon: Zap, label: 'Automation' },
 ];
 
 export default function Sidebar({ onNewClaim }: SidebarProps) {

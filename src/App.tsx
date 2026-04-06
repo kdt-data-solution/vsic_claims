@@ -6,6 +6,7 @@ import KanbanBoard from './components/KanbanBoard';
 import ClaimForm from './components/ClaimForm';
 import Dashboard from './pages/Dashboard';
 import FlowchartPage from './pages/FlowchartPage';
+import AutomationPage from './pages/AutomationPage';
 
 export default function App() {
   const [showNewClaim, setShowNewClaim] = useState(false);
@@ -22,6 +23,7 @@ export default function App() {
                 <Route path="/" element={<span className="font-semibold text-gray-700">Dashboard</span>} />
                 <Route path="/board" element={<span className="font-semibold text-gray-700">Claims Board</span>} />
                 <Route path="/flowchart" element={<span className="font-semibold text-gray-700">Process Flowchart</span>} />
+                <Route path="/automation" element={<span className="font-semibold text-gray-700">Automation</span>} />
               </Routes>
             </div>
             <button onClick={() => setShowNewClaim(true)}
@@ -35,6 +37,7 @@ export default function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/board" element={<KanbanBoard />} />
             <Route path="/flowchart" element={<FlowchartPage />} />
+            <Route path="/automation" element={<AutomationPage />} />
           </Routes>
         </main>
 
